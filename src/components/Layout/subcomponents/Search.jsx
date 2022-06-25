@@ -11,6 +11,7 @@ const Search = ({ placeholder, value, onChange, onClear, onSubmit }) => {
       />
       <button 
         onClick={onSubmit}
+        disabled={value === ''}
         className='cursor-pointer ml-1 w-10 h-10 rounded bg-stone-300 hover:bg-stone-200 text-2xl text-2xl flex justify-center items-center relative'>
         🔍
       </button>

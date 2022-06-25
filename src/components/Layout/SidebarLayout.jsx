@@ -15,14 +15,14 @@ const Layout = ({ children }) => {
     setSearchQuery(event.target.value)
   }
 
-  const onSearchQueryClear = (event) => {
+  const onSearchQueryClear = () => {
     setSearchQuery('')
   }
 
   return (
-    <div className='min-h-screen flex flex-col'>
+    <div className='min-h-screen flex flex-col overflow-hidden'>
       <header 
-        className='bg-stone-400 sticky top-0 h-14 flex px-5 justify-between items-center font-semibold'
+        className='bg-stone-400 sticky top-0 h-[5vh] flex px-5 justify-between items-center font-semibold'
       >
         <Link href='/'>
           <a className='text-4xl'>📺 MeTube</a>
@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
           <Notifications startingValue="4"/>
         </Link>
       </header>
-      <div className='flex flex-col md:flex-row flex-1'>
+      <div className='flex flex-col md:flex-row flex-1 max-h-[95vh] overflow-auto'>
         <Navigation />
         <main className='flex-1'>{children}</main>
       </div>

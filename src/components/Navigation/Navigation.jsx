@@ -21,7 +21,7 @@ const Navigation = ({}) => {
   ];
 
   return (
-    <aside className='bg-stone-300 w-full md:w-60 flex space-between flex-col'>
+    <aside className='bg-stone-300 w-full md:w-60 flex space-between flex-col max-h-[95vh] sticky top-0 overflow-hidden'>
       <ul className='mt-1 mb-auto'>
         {menuItems.map(({href, title, icon}) => {
           return <NavItem href={href} text={title} key={title} icon={icon} />
