@@ -1,6 +1,6 @@
-import NavItem from "./subcomponents/NavItem"
+import NavItem from './subcomponents/NavItem'
 
-const Navigation = ({}) => {
+const Navigation = () => {
   
   const menuItems = [
     {
@@ -28,8 +28,8 @@ const Navigation = ({}) => {
         })}
       </ul>
       <ul className=''>
-        <NavItem href='/profile' text='Profile' key='Profile' icon={'👨🏼‍🦲'} />
-        <NavItem href='/settings' text='Settings' key='Settings' icon={'⚙️'} />
+        <NavItem href='/profile' text='Profile' key='Profile' icon='👨🏼‍🦲' />
+        <NavItem href='/settings' text='Settings' key='Settings' icon='⚙️' />
       </ul>
     </aside>
   )

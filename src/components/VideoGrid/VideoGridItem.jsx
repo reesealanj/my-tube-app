@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import Image from "next/image"
+import Image from 'next/image'
 import classNames from 'classnames'
-import { useRouter } from 'next/router'
 
 const VideoGridItem = ({ video, videoThumb, classes }) => {
 
@@ -30,14 +29,13 @@ const VideoGridItem = ({ video, videoThumb, classes }) => {
     '': hovered
   })
 
-  const router = useRouter()
 
   return (
-    <div 
+    <a 
       className={containerClasses} 
       onMouseEnter={() => {setHovered(true)}} 
       onMouseLeave={() => {setHovered(false)}}
-      onClick={() => {router.push(`/video/${video.id}`)}}
+      href={`/video/${video.id}`}
     >
       <Image 
           src={videoThumb}
@@ -59,7 +57,7 @@ const VideoGridItem = ({ video, videoThumb, classes }) => {
       <div className='inline-flex flex-row items-baseline px-4 pb-2'>
         <span className='text-xs text-muted'>@{video.author}</span>
       </div>
-    </div>)
+    </a>)
 }
 
 export default VideoGridItem

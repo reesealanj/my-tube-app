@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import VideoListItem from "../VideoListItem/VideoListItem"
+import VideoListItem from '../VideoListItem/VideoListItem'
 
 const VideoCarousel = ({ videos, title }) => {
 

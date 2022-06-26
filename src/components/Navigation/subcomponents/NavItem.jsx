@@ -15,8 +15,8 @@ const NavItem = ({ href, text, icon }) => {
   return (
     <li className='m-2 font-medium uppercase text-md'>
       <Link href={href}>
-        <a className={linkClassNames}>
-          <span className={`mr-2 my-auto`}>{icon}</span>
+        <a className={linkClassNames} href={href}>
+          <span className='mr-2 my-auto'>{icon}</span>
           {text}
         </a>
       </Link>

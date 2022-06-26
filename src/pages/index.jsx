@@ -6,9 +6,9 @@ function Home({}) {
 
   // sorts videos from highest views -> lowest views
   const viewsSortedVideos = videos.sort((a, b) => {
-    if (a.views === b.views) return 0
     if (a.views > b.views) return -1
     if (a.views < b.views) return 1
+    return 0
   })
 
   const tenMostViewed = viewsSortedVideos.slice(-10)
@@ -16,13 +16,11 @@ function Home({}) {
   return (
     <div className='flex flex-col h-full p-5'>
       <h1 className='text-4xl mb-5 font-bold'>Welcome, Reese</h1>
-      {/**
       <VideoCarousel 
         title='Most Viewed'
         videos={tenMostViewed}
         className=''
       />
-      */}
       <VideoGrid 
         videos={videos} 
         classes=''

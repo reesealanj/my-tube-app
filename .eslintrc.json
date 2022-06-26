@@ -21,6 +21,9 @@
     "react/display-name": 0,
     "jsx-quotes":[2, "prefer-single"],
     "no-plusplus": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "react/function-component-definition": "off",
+    "quotes": ["error", "single"],
+    "arrow-body-style": "off"
   }
 }

@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import Link from 'next/link'
-import { useRouter } from "next/router"
+import { useRouter } from 'next/router'
 
-import Navigation from "../Navigation/Navigation"
+import Navigation from '../Navigation/Navigation'
 import Notifications from './subcomponents/Notifications'
 import Search from './subcomponents/Search'
 
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
         className='bg-stone-400 sticky top-0 h-[5vh] flex px-5 justify-between items-center font-semibold'
       >
         <Link href='/'>
-          <a className='text-4xl'>📺 MeTube</a>
+          <span className='text-4xl'>📺 MeTube</span>
         </Link>
         <Search 
           placeholder='what can you get into...' 
@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
           onClear={onSearchQueryClear}
         />
         <Link href='/notifications' passHref>
-          <Notifications startingValue="4"/>
+          <Notifications startingValue='4'/>
         </Link>
       </header>
       <div className='flex flex-col md:flex-row flex-1 max-h-[95vh] overflow-auto'>
