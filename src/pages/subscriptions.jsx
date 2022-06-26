@@ -1,4 +1,4 @@
-const Subscriptions = ({}) => {
+function Subscriptions({}) {
   return (
     <div className='flex h-full flex-col justify-center items-center'>
       <h1 className='text-4xl mb-5 font-bold'>Subscriptions</h1>

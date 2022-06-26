@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 
-const Search = ({}) => {
+function Search({}) {
 
   const { query } = useRouter()
 

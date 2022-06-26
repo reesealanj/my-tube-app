@@ -27,6 +27,16 @@ If you found a problem or want to submit an improvement to the project, use the 
 - `main` - main branch, this is what will be deployed to DigitalOcean/whatever service it runs on
 - `develop` - this is the "working branch" that is being used to develop while keeping production releases clean
 
+## Project Progression Idea
+
+1. Start with just UI working off of stored data (data in config files, thumbnails and videos in the `/public` folder)
+2. Then progress the UI for the thumbnails and video to come from Firestore (video metadata still hardcoded)
+3. Then add authentication to allow for individual channels, uploads, and subscriptions
+4. Now with proper security, add the ability to upload and view other uploads (homepage selections still hardcoded)
+5. Then add the notion of "trending," but managed by me directly in firestore (a list of top video id's)
+6. Then work with interactive metrics (video views, comments, likes, dislikes)
+7. Then tackle fun stretch features or new stuff that comes up (potentially stuff below)
+
 ## Project Goals/Wishlist
 
 (feel free to make a PR to add to this list)

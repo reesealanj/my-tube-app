@@ -2,7 +2,7 @@ import VideoCarousel from '../components/VideoCarousel/VideoCarousel'
 import VideoGrid from '../components/VideoGrid/VideoGrid'
 import videos from '../config/videos.json'
 
-const Home = ({}) => {
+function Home({}) {
 
   // sorts videos from highest views -> lowest views
   const viewsSortedVideos = videos.sort((a, b) => {

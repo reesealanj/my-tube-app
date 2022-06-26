@@ -2,7 +2,7 @@ const videos = []
 const featuredVideos = []
 
 for (let i = 0; i < 100; i++) {
-  let toPush = {
+  const toPush = {
     'id': `video-${i}`,
     'title': `Video ${i}`,
     'description': `This is a video about ${i} things`,
